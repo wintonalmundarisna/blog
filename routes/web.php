@@ -7,22 +7,23 @@ use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('home', [
-        'title' => 'Home',
-    ]);
-});
+// Route::get('/', function () {
+//     return view('home', [
+//         'title' => 'Home',
+//     ]);
+// });
 
-Route::get('/about', function () {
-    return view('about', [
-        'title' => 'About',
-        'name' => 'Almundarisna',
-        'email' => 'wintonalmundarisna@gmail.com',
-        'image' => 'winton.jpg'
-    ]);
-});
+// Route::get('/about', function () {
+//     return view('about', [
+//         'title' => 'About',
+//         'name' => 'Almundarisna',
+//         'email' => 'wintonalmundarisna@gmail.com',
+//         'image' => 'winton.jpg'
+//     ]);
+// });
 
-Route::get('/posts', [PostController::class, 'index']);
+// Route::get('/posts', [PostController::class, 'index']);
+Route::get('/', [PostController::class, 'index']);
 
 // Halaman single route 
 Route::get('posts/{post:slug}', [PostController::class, 'show']);

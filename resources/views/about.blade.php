@@ -1,4 +1,4 @@
-@extends('layouts.main')
+{{-- @extends('layouts.main')
 
 @section('container')
 
@@ -7,4 +7,4 @@
 <p>{{ $email }}</p>
 <img src="img/winton.jpg" alt="{{ $name }}" width="200">
 
-@endsection
+@endsection --}}

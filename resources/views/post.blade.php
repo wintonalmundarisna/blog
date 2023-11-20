@@ -9,6 +9,7 @@
 
     {!! $post->body !!} 
     {{-- Tag p nya ga bakalan dicetak --}}
-    <a href="/posts" class="d-block mt-3">Back</a>
+    {{-- <a href="/posts" class="d-block mt-3">Back</a> --}}
+    <a href="/" class="d-block mt-3">Back</a>
 </article>
 @endsection
